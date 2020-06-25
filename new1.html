@@ -1,0 +1,120 @@
+<?php
+    //cek apakah tombol submit sudah pernah di pencet atau belum
+    if ( isset( $_POST["submit"] ) ) {
+        //cek username
+        if ( $_POST["username"] == "siapaja69@yahoo.co.id" && $_POST["password"] == "123" ) {
+        //jika benar redirect ke halaman moba
+            header("Location: new.html");
+            exit;
+        } else {
+        //jika salah, tampilkan pesan kesalhan
+            footer("Location: new2.html");
+        }
+    }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoBa</title>
+    <link rel="stylesheet" href="new1.css">
+</head>
+<body>
+    <div class="topbar"></div>
+    <div class="container">
+        <div class="header cf">
+            <h1 class="judul">MoBa</h1>
+            <form action="" method="POST" class="login">
+                <table>
+                    <tr class="caption">
+                        <td><label for="username">Email atau Telepon</label></td>
+                        <td><label for="password">Kata Sandi</label></td>
+                    </tr>
+                    <tr class="textbox">
+                        <td><input type="text" name="username" id="username"></td>
+                        <td><input type="password" name="password" id="password"></td>
+                        <td><button type="submit" name="submit">masshook!!</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="content cf">
+            <div class="main">
+                <h3>MoBa membantu anda terhubung dan berbagi berbagai hal tentang backpacker dengan orang lain di dunia ini.</h3>
+                <div class="image"></div>
+            </div>
+            <div class="sidebar">
+                <h2>Daftar</h2>
+                <p>ini cepat dan mudah.</p>
+                <form>
+                    <table>
+                        <tr>
+                            <td><input type="text" placeholder="Nama depan"></td>
+                            <td><input type="text" placeholder="Nama belakang"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Nomor telepon atau Email" id="nomor"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" placeholder="Masukan kata sandi baru"></td>
+                        </tr>
+                    </table>
+                    <h3>Tanggal lahir</h3>
+                    <select name="tanggal" id="tanggal">
+                        <option value="tanggal">01</option>
+                        <option value="tanggal">02</option>
+                        <option value="tanggal">03</option>
+                        <option value="tanggal">04</option>
+                        <option value="tanggal">05</option>
+                    </select>
+                    <select name="bulan" id="bulan">
+                        <option value="bulan">jan</option>
+                        <option value="bulan">feb</option>
+                        <option value="bulan">mar</option>
+                        <option value="bulan">apr</option>
+                        <option value="bulan">mei</option>
+                    </select>
+                    <select name="tahun" id="tahun">
+                        <option value="tahun">2020</option>
+                        <option value="tahun">2021</option>
+                        <option value="tahun">2022</option>
+                        <option value="tahun">2023</option>
+                        <option value="tahun">2024</option>
+                    </select>
+                    <br>
+                    <h3>Jenis kelamin</h3>
+                    <input type="radio" id="pria" name="jeniskelamin"><label for="pria">Pria</label>
+                    <input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">Wanita</label>
+                    <br>
+                    <input type="submit" value="daftar ">
+                </form>
+            </div>
+        </div>
+        <div class="footer cf">
+            <div class="profil">
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus illo iste, voluptate fugit tenetur veniam accusamus. Vero totam neque facilis, optio, consequatur illum aut cum itaque libero dolore sed ipsum.</p>
+            </div>
+            <div class="opsi">
+                <h3>Dolor sit</h3>
+                <p>Amet consevture adispicing elit</p><hr>
+                <p>Repellendus illo iste</p><hr>
+                <p>Voluptate fugit tenetur veniam accusamus</p><hr>
+                <p>Consequatur illum aut cum itaque libero</p>
+            </div>
+            <div class="sosmed">
+                <h3>Follow us</h3>
+                <p>Twitter</p>
+                <p>Instagram</p>
+                <p>Facebook</p>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <hr>
+            <div class="copy">&copy; Copyright 2020. halimurrasyid.</div>
+        </div>
+    </div>
+    <div class="bot-bar"></div> 
+</body>
+</html>

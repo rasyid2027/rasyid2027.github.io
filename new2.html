@@ -1,0 +1,45 @@
+<?php
+    //cek apakah tombol submit sudah pernah di pencet atau belum
+    if ( isset( $_POST["submit"] ) ) {
+        //cek username
+        if ( $_POST["username"] == "siapaja69@yahoo.co.id" && $_POST["password"] == "123" ) {
+        //jika benar redirect ke halaman moba
+            header("Location: new.php");
+            exit;
+        } else {
+        //jika salah, tampilkan pesan kesalhan
+            footer("Location: new2.php");
+        }
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new2.css">
+    <title>login</title>
+</head>
+<body>
+    <div class="topbar">
+        <h1>MoBa</h1>
+    </div>
+    <div class="container">
+        <h2>Login ke MoBa</h2>
+        <form action="" method="POST">
+            <table>
+                <tr>
+                    <td><input type="text" name="username" id="nama" placeholder="Email atau telepon"></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="password" id="password" placeholder="Kata Sandi"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit" name="submit">Masshook!!</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

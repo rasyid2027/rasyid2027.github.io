@@ -1,0 +1,233 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* style */
+
+body {
+    font: 16px/28px arial, sans-serif;
+    background-color: #ffcdcd;
+    color: #333;
+}
+
+.topbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    background-color: #8d3535;
+    z-index: -9999;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header {
+    color: #eaeaea;
+}
+
+.header .judul {
+    width: 400px;
+    float: left;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.judul {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.login {
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.caption {
+    font-size: 14px;
+}
+
+.textbox input[type=text] {
+    margin-right: 10px;
+}
+
+.textbox input[type=password] {
+    margin-right: 10px;
+}
+
+/* main */
+
+.main {
+    width: 400px;
+    padding-top: 60px;
+    float: left;
+}
+
+.main h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main .image {
+    width: 400px;
+    height: 400px;
+    background-image: url(img/moba\ jadi1.png);
+    background-size: cover;
+    background-position: 0 -70px;
+    background-repeat: no-repeat;
+}
+
+/* sidebar */
+
+.sidebar {
+    width: 500px;
+    float: right;
+    padding-top: 60px;
+}
+
+.sidebar h2, p, form {
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    font-size: 28px;
+}
+
+.sidebar input[type=text] {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: grey;
+}
+
+/* footer */
+
+hr {
+    color: #eaeaea;
+}
+
+.footer {
+    margin-top: 80px;
+    color: #eaeaea;
+}
+
+.footer h3 {
+    font-size: 22px;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profil {
+    width: 400px;
+    float: left;
+}
+
+.opsi {
+    width: 300px;
+    float: left;
+    margin-left: 50px;
+}
+
+.sosmed {
+    width: 200px;
+    float: right;
+}
+
+.footer-copy {
+    color: #eaeaea;
+}
+
+.copy {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.bot-bar {
+    position: absolute;
+    bottom: -550px;
+    right: 0;
+    left: 0;  
+    height: 500px;  
+    background-color: #333;
+    z-index: -9999;
+}
+
+/* clearfix */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
